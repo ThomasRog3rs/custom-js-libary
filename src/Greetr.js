@@ -1,4 +1,6 @@
-const Greetr = (() => {
+import $ from 'jquery'; // Import jQuery
+
+const Greetr = ((global, jQuery) => {
     function helloWorld(){
         alert("Hello World");
     }
@@ -11,6 +13,6 @@ const Greetr = (() => {
         helloWorld,
         greet
     }
-})();
+})(window, $);
 
 export default Greetr
