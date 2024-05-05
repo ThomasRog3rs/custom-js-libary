@@ -28,7 +28,7 @@ const Greetr = ((global, jQuery) => {
         },
         validateLanguage: function(){
             if(supportedLanguages.indexOf(this.language) === -1) {
-                throw "Invalid Lanuguage";
+                throw `Invalid Lanuguage of ${this.language}`;
             }
             // supportedLanguages.forEach(language => {
             //     if(language === this.language){
@@ -37,12 +37,46 @@ const Greetr = ((global, jQuery) => {
             // })
             // return false;
         },
-        greet: function(){
+        greeting: function(){
             return `${greetings[this.language]} ${this.firstName}!`
         },
         
-        formalGreet: function(){
+        formalGreeting: function(){
             return `${formalGreetings[this.language]}, ${this.fullName()}.`
+        },
+        
+        greet: function(formal){
+            let msg;
+            
+            if(formal){
+                msg = this.formalGreeting();
+            }else{
+                msg = this.greeting()
+            }
+            
+            console.log(msg);
+            
+            //allows methods to be chainable
+            return this;
+        },
+        
+        log: function(){
+            if(console){
+                console.log(`${logMessages[this.language]} : ${this.fullName()}`);
+            }
+            
+            return this;
+        },
+        
+        setLanguage: function(language){
+            if(language){
+                this.language = language;
+                this.validateLanguage();
+            }else{
+                throw "language is undefined";
+            }
+            
+            return this;
         }
     };
     
@@ -61,3 +95,5 @@ const Greetr = ((global, jQuery) => {
 
     return Greetr
 })(window, $);
+
+export default Greetr;
