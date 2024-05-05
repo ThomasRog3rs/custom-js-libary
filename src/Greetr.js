@@ -13,7 +13,7 @@ const Greetr = ((global, jQuery) => {
     };
     
     const formalGreetings = {
-        en: 'Greetings!',
+        en: 'Greetings',
         es: 'Saludos'
     };
     
@@ -36,6 +36,13 @@ const Greetr = ((global, jQuery) => {
             //     }
             // })
             // return false;
+        },
+        greet: function(){
+            return `${greetings[this.language]} ${this.firstName}!`
+        },
+        
+        formalGreet: function(){
+            return `${formalGreetings[this.language]}, ${this.fullName()}.`
         }
     };
     
