@@ -1,3 +1,6 @@
 import Greetr from "./Greetr";
-Greetr.helloWorld();
-Greetr.greet("John Doe")
+import $ from 'jquery';
+
+const g = G$("John", "Doe");
+console.log(g);
+console.log(g.fullName());
