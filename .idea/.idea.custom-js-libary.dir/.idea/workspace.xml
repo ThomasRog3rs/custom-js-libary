@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ec2ee9b-71f5-49d3-aeaf-6113d1c8cc00" name="Changes" comment="set up a dev enviroment with a build process">
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Greetr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="2ec2ee9b-71f5-49d3-aeaf-6113d1c8cc00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.custom-js-libary.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.custom-js-libary.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +28,6 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -62,7 +57,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/tom/RiderProjects/custom-js-libary",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -142,6 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714923121454</updated>
       <workItem from="1714923124182" duration="4356000" />
+      <workItem from="1714928279731" duration="368000" />
     </task>
     <task id="LOCAL-00008" summary="update gitignore">
       <option name="closed" value="true" />
@@ -151,7 +148,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714923146395</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test">
+      <option name="closed" value="true" />
+      <created>1714928308942</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714928308942</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update gitignore">
+      <option name="closed" value="true" />
+      <created>1714928448307</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714928448307</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,8 +188,9 @@
     <MESSAGE value="init project" />
     <MESSAGE value="update git ignore" />
     <MESSAGE value="init" />
-    <MESSAGE value="update gitignore" />
     <MESSAGE value="set up a dev enviroment with a build process" />
-    <option name="LAST_COMMIT_MESSAGE" value="set up a dev enviroment with a build process" />
+    <MESSAGE value="test" />
+    <MESSAGE value="update gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="update gitignore" />
   </component>
 </project>
