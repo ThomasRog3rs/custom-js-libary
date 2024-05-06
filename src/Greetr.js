@@ -87,7 +87,7 @@ const Greetr = ((global, jQuery) => {
         self.language = language || 'en';
     };
 
-    //make sure init construtor function has access to methods put on the Greetr prototype object
+    //make sure init constructor function has access to methods put on the Greetr prototype object
     Greetr.init.prototype = Greetr.prototype;
     
     //give an alias and place it on the global scope so everything has access to it
