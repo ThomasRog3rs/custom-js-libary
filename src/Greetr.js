@@ -77,6 +77,26 @@ const Greetr = ((global, jQuery) => {
             }
             
             return this;
+        },
+        
+        HTMLGreeting: function(selector, formal){
+            if(!$){
+                throw "jQuery not loaded"
+            }
+            if(!selector){
+                throw "Missing jQuery selector"
+            }
+            
+            let msg;
+            if(formal){
+                msg = this.formalGreeting()
+            }else{
+                msg = this.greeting();
+            }
+            
+            $(selector).html(msg);
+            
+            return this;
         }
     };
     

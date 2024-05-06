@@ -10500,6 +10500,26 @@ const Greetr = ((global, jQuery) => {
             }
             
             return this;
+        },
+        
+        HTMLGreeting: function(selector, formal){
+            if(!(jquery_default())){
+                throw "jQuery not loaded"
+            }
+            if(!selector){
+                throw "Missing jQuery selector"
+            }
+            
+            let msg;
+            if(formal){
+                msg = this.formalGreeting()
+            }else{
+                msg = this.greeting();
+            }
+            
+            jquery_default()(selector).html(msg);
+            
+            return this;
         }
     };
     
@@ -10510,7 +10530,7 @@ const Greetr = ((global, jQuery) => {
         self.language = language || 'en';
     };
 
-    //make sure init construtor function has access to methods put on the Greetr prototype object
+    //make sure init constructor function has access to methods put on the Greetr prototype object
     Greetr.init.prototype = Greetr.prototype;
     
     //give an alias and place it on the global scope so everything has access to it
