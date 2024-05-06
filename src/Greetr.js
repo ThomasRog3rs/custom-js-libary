@@ -105,6 +105,8 @@ const Greetr = ((global, jQuery) => {
         self.firstName = firstName || '';
         self.lastName = lastName || '';
         self.language = language || 'en';
+        
+        self.validateLanguage();
     };
 
     //make sure init constructor function has access to methods put on the Greetr prototype object
