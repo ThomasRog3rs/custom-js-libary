@@ -10528,6 +10528,8 @@ const Greetr = ((global, jQuery) => {
         self.firstName = firstName || '';
         self.lastName = lastName || '';
         self.language = language || 'en';
+        
+        self.validateLanguage();
     };
 
     //make sure init constructor function has access to methods put on the Greetr prototype object
@@ -10544,9 +10546,16 @@ const Greetr = ((global, jQuery) => {
 
 
 
-const g = G$("John", "Doe");
+const g = G$("John", "Doe", "en");
 console.log(g);
-g.log().setLanguage("en").log().greet().greet(true);
+g.log().setLanguage("es").log().greet().greet(true);
+
+jquery_default()('input#login').click(() => {
+    const loginGtr = G$("John", "Doe");
+    jquery_default()('#loginDiv').hide();
+    let lang = jquery_default()('select#lang').val();
+    g.setLanguage(lang).HTMLGreeting('h1#greeting').log();
+})
 })();
 
 /******/ })()
